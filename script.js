@@ -5,6 +5,26 @@ menuToggle.addEventListener('click', () => {
 navLinks.classList.toggle('active');
 });
 
+// search bar
+
+document.getElementById('searchBtn').addEventListener('click', function() {
+    let query = document.getElementById('searchInput').value.toLowerCase();
+    searchContent(query);
+});
+
+function searchContent(query) {
+    let elements = document.body.getElementsByTagName('*');
+    let resultsContainer = document.getElementById('searchResults');
+    resultsContainer.innerHTML = '';
+
+    for (let element of elements) {
+        if (element.textContent.toLowerCase().includes(query) && query !== '') {
+            let result = document.createElement('div');
+            result.innerHTML = `Found in: <strong>${element.tagName}</strong> - ${element.textContent.substring(0, 100)}...`;
+            resultsContainer.appendChild(result);
+        }
+    }
+}
 
 const slides = document.querySelectorAll(".slide");
 const typedTextElements = document.querySelectorAll(".typed-text");
