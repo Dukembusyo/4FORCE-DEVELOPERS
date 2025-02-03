@@ -120,6 +120,12 @@ p{
     #searchBtn:hover {
     background-color: #c02727;
     }
+
+
+    .highlight {
+        background-color: yellow;
+        font-weight: bold;
+    }
     /* Responsive Styles */
     @media (max-width: 768px) {
 

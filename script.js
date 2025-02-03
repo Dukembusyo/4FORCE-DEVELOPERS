@@ -5,25 +5,30 @@ menuToggle.addEventListener('click', () => {
 navLinks.classList.toggle('active');
 });
 
-// search bar
-
-document.getElementById('searchBtn').addEventListener('click', function() {
-    let query = document.getElementById('searchInput').value.toLowerCase();
-    searchContent(query);
+// scripts
+document.getElementById("searchBtn").addEventListener("click", function () {
+    let query = document.getElementById("searchInput").value.toLowerCase();
+    removeHighlights(); // Remove old highlights before a new search
+    searchAndHighlight(query);
 });
 
-function searchContent(query) {
-    let elements = document.body.getElementsByTagName('*');
-    let resultsContainer = document.getElementById('searchResults');
-    resultsContainer.innerHTML = '';
+function searchAndHighlight(query) {
+    if (!query.trim()) return; // Ignore empty search
+
+    let elements = document.body.getElementsByTagName("*");
 
     for (let element of elements) {
-        if (element.textContent.toLowerCase().includes(query) && query !== '') {
-            let result = document.createElement('div');
-            result.innerHTML = `Found in: <strong>${element.tagName}</strong> - ${element.textContent.substring(0, 100)}...`;
-            resultsContainer.appendChild(result);
+        if (element.children.length === 0 && element.textContent.toLowerCase().includes(query)) {
+            let regex = new RegExp(`(${query})`, "gi");
+            element.innerHTML = element.innerHTML.replace(regex, `<span class="highlight">$1</span>`);
         }
     }
+}
+
+function removeHighlights() {
+    document.querySelectorAll(".highlight").forEach(el => {
+        el.outerHTML = el.innerHTML; // Remove highlight while keeping the text
+    });
 }
 
 const slides = document.querySelectorAll(".slide");
