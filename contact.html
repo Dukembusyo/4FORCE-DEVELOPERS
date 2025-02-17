@@ -9,18 +9,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 rel="stylesheet">
 <!-- Tawk.to Live Chat Integration -->
-<script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-    var s1 = document.createElement("script"), s0 =
-    document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/YOUR_TAWKTO_ID/default';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-    })();
-    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
 </head>
 <body>
 <!-- Header Section -->
@@ -129,10 +120,7 @@ rel="stylesheet">
     
     <!-- Google Map -->
     <div class="map-container">
-    <iframe
-    src="images/Screenshot_20250129-193609_Maps.jpg"
-    width="100%" height="400" style="border:0;" allowfullscreen=""
-    loading="lazy"></iframe>
+        <div id="map" style="width:100%; height:400px;"></div>
     </div>
     <!-- Social Media Links -->
     <div class="social-links">

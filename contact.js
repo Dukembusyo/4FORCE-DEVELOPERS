@@ -40,3 +40,35 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     // Clear the input fields after submission
     document.getElementById("contact-form").reset();
     });
+
+
+
+    function initMap() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                const userLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 15,
+                    center: userLocation
+                });
+
+                new google.maps.Marker({
+                    position: userLocation,
+                    map: map,
+                    title: "You are here!"
+                });
+            }, () => {
+                alert("Location access denied. Enable location services.");
+            });
+        } else {
+            alert("Geolocation is not supported by your browser.");
+        }
+    }
+
+    window.onload = initMap;
+
+    
