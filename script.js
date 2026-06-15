@@ -1,68 +1,47 @@
-// Mobile Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('primary-navigation');
 
-if (menuToggle) {
+if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('active'));
   });
 
-  // Close menu when a link is clicked
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('active');
       menuToggle.setAttribute('aria-expanded', 'false');
     });
   });
-
-  // Close menu on window resize
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      navLinks.classList.remove('active');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
 }
 
-// Set current year
 document.addEventListener('DOMContentLoaded', () => {
   const yearElement = document.getElementById('current-year');
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
 
-  // Contact form handler
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
-      const formData = new FormData(contactForm);
-      const name = contactForm.querySelector('input[type="text"]').value;
-      const email = contactForm.querySelector('input[type="email"]').value;
-      const message = contactForm.querySelector('textarea').value;
-
-      // Create mailto link
-      const subject = encodeURIComponent('New Project Inquiry from ' + name);
+      const name = document.getElementById('full-name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-      window.location.href = `mailto:info@4forcedevelopers.com?subject=${subject}&body=${body}`;
-
-      // Reset form
+      const subject = encodeURIComponent('Project Inquiry - 4Force Developers');
+      window.location.href = `mailto:dukembusyo@gmail.com?subject=${subject}&body=${body}`;
+      document.getElementById('success-message').classList.remove('hidden');
       contactForm.reset();
     });
   }
 });
 
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const href = this.getAttribute('href');
-    if (href !== '#' && document.querySelector(href)) {
-      e.preventDefault();
-      document.querySelector(href).scrollIntoView({
-        behavior: 'smooth'
-      });
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768 && navLinks) {
+    navLinks.classList.remove('active');
+    if (menuToggle) {
+      menuToggle.setAttribute('aria-expanded', 'false');
     }
-  });
+  }
 });

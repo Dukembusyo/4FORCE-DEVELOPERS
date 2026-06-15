@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!-- Header -->
 <header>
   <nav class="navbar">
     <div class="container navbar-inner">
@@ -25,7 +24,9 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -33,312 +34,253 @@
     </div>
   </nav>
 </header>
-
 <main>
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>We Create Digital Experiences That Drive Growth</h1>
-        <p>Full-service digital agency specializing in web development, design, and strategic marketing. Let's transform your business.</p>
-        <div class="hero-cta">
+  <section id="home" class="hero hero-home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Digital Agency</span>
+        <h1>Premium digital experiences for ambitious brands.</h1>
+        <p>We design, build and launch websites, mobile apps, and marketing systems that grow companies across Africa and beyond.</p>
+        <div class="hero-buttons">
           <a href="#contact" class="btn btn-primary">Start Your Project</a>
           <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
         </div>
+        <div class="hero-metrics">
+          <div>
+            <strong>150+</strong>
+            <span>Projects Delivered</span>
+          </div>
+          <div>
+            <strong>100+</strong>
+            <span>Happy Clients</span>
+          </div>
+          <div>
+            <strong>8+</strong>
+            <span>Years Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-image">
+          <img src="images/hero1.jpg" alt="Digital agency work">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
   <section id="services" class="services">
     <div class="container">
       <div class="section-header">
-        <h2>Our Services</h2>
-        <p>Comprehensive solutions for your digital needs</p>
+        <h2>Our core services</h2>
+        <p>End-to-end digital solutions designed for growth, visibility and conversion.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card">
+        <article class="service-card">
           <div class="service-icon">💻</div>
           <h3>Web Development</h3>
-          <p>Fast, scalable websites built with modern technologies for maximum performance and conversions.</p>
-        </div>
-        <div class="service-card">
+          <p>Fast, scalable websites built with modern frameworks and clean code.</p>
+        </article>
+        <article class="service-card">
           <div class="service-icon">📱</div>
           <h3>Mobile Apps</h3>
-          <p>Native and cross-platform apps that engage users and drive real business growth.</p>
-        </div>
-        <div class="service-card">
+          <p>Native and cross-platform experiences that engage real users.</p>
+        </article>
+        <article class="service-card">
           <div class="service-icon">🎨</div>
           <h3>UI/UX Design</h3>
-          <p>User-centric design that beautifully blends aesthetics with functionality and strategy.</p>
-        </div>
-        <div class="service-card">
+          <p>Beautiful interfaces and flows designed for conversion and usability.</p>
+        </article>
+        <article class="service-card">
           <div class="service-icon">📊</div>
           <h3>Digital Marketing</h3>
-          <p>Data-driven campaigns and SEO strategies that deliver measurable results and ROI.</p>
-        </div>
-        <div class="service-card">
+          <p>Performance campaigns, SEO, and analytics to grow traffic and leads.</p>
+        </article>
+        <article class="service-card">
           <div class="service-icon">🌐</div>
           <h3>Cloud & Hosting</h3>
-          <p>Enterprise-grade infrastructure with 99.9% uptime and 24/7 security monitoring.</p>
-        </div>
-        <div class="service-card">
+          <p>Secure infrastructure and reliable deployment for every project.</p>
+        </article>
+        <article class="service-card">
           <div class="service-icon">🔒</div>
           <h3>Security & Optimization</h3>
-          <p>Comprehensive security audits, performance optimization, and ongoing maintenance support.</p>
-        </div>
+          <p>Ongoing support, optimisation and site hardening for long-term stability.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="section-header">
-        <h2>Featured Projects</h2>
-        <p>Showcase of successful digital transformations</p>
+        <h2>Featured work</h2>
+        <p>Projects that show our design quality, technical skill and business impact.</p>
       </div>
       <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <div class="portfolio-image">🌐</div>
-          <h3>E-Commerce Platform</h3>
-          <p>Custom e-commerce solution with +300% sales increase. Features inventory management, payment integration, and analytics.</p>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-image">📱</div>
-          <h3>Mobile App Launch</h3>
-          <p>Cross-platform mobile app for logistics tracking. 50K+ downloads, 4.8★ rating, real-time GPS integration.</p>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-image">🎨</div>
-          <h3>Brand Redesign</h3>
-          <p>Complete digital rebranding with new website, design system, and marketing materials. 45% traffic increase.</p>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-image">🔧</div>
-          <h3>SaaS Product</h3>
-          <p>Built a B2B SaaS platform with 500+ enterprise clients. Fully automated billing, API infrastructure.</p>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-image">📊</div>
-          <h3>Analytics Dashboard</h3>
-          <p>Advanced analytics platform processing 10M+ data points. Real-time dashboards and custom reporting.</p>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-image">🚀</div>
-          <h3>Startup MVP</h3>
-          <p>Launched MVP in 6 weeks. Went from zero to Series A funding with successful product-market fit.</p>
-        </div>
+        <article class="portfolio-item">
+          <img src="images/ecom.jpg" alt="E-commerce project">
+          <div class="portfolio-copy">
+            <h3>E-Commerce Platform</h3>
+            <p>High-converting store with payment integration and analytics.</p>
+          </div>
+        </article>
+        <article class="portfolio-item">
+          <img src="images/mobileapp.jpg" alt="Mobile app project">
+          <div class="portfolio-copy">
+            <h3>Mobile App Launch</h3>
+            <p>Logistics app with navigations, real-time updates, and intuitive UX.</p>
+          </div>
+        </article>
+        <article class="portfolio-item">
+          <img src="images/grap2.jpg" alt="Brand redesign project">
+          <div class="portfolio-copy">
+            <h3>Brand Redesign</h3>
+            <p>Fresh visual identity and website refresh for a growing brand.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Stats Section -->
   <section class="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <h3>150+</h3>
-          <p>Projects Delivered</p>
-        </div>
-        <div class="stat-card">
-          <h3>100+</h3>
-          <p>Happy Clients</p>
-        </div>
-        <div class="stat-card">
-          <h3>45+</h3>
-          <p>Team Members</p>
-        </div>
-        <div class="stat-card">
-          <h3>8+</h3>
-          <p>Years Experience</p>
-        </div>
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <h3>150+</h3>
+        <p>Projects Delivered</p>
+      </div>
+      <div class="stat-card">
+        <h3>100+</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-card">
+        <h3>45+</h3>
+        <p>Team Members</p>
+      </div>
+      <div class="stat-card">
+        <h3>8+</h3>
+        <p>Years Experience</p>
       </div>
     </div>
   </section>
 
-  <!-- Process Section -->
   <section id="process" class="process">
     <div class="container">
       <div class="section-header">
-        <h2>Our Process</h2>
-        <p>Strategic approach to every project</p>
+        <h2>How we work</h2>
+        <p>A streamlined process that keeps every project on time and on target.</p>
       </div>
       <div class="process-timeline">
-        <div class="process-step">
-          <div class="step-number">01</div>
-          <h3>Discovery</h3>
-          <p>We understand your business, goals, and target audience through in-depth consultation.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">02</div>
+        <article class="process-step">
+          <span>01</span>
+          <h3>Discover</h3>
+          <p>Understand your business, audience and goals with focused workshops.</p>
+        </article>
+        <article class="process-step">
+          <span>02</span>
           <h3>Strategy</h3>
-          <p>We develop comprehensive strategies aligned with your business objectives and market insights.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">03</div>
+          <p>Define the product roadmap, messaging and growth plan.</p>
+        </article>
+        <article class="process-step">
+          <span>03</span>
           <h3>Design</h3>
-          <p>Creative team designs beautiful, user-centric experiences that engage and convert.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">04</div>
-          <h3>Development</h3>
-          <p>Expert developers build scalable, secure solutions using cutting-edge technologies.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">05</div>
-          <h3>Testing</h3>
-          <p>Rigorous QA testing ensures quality, performance, and security across all platforms.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">06</div>
-          <h3>Launch & Support</h3>
-          <p>Smooth deployment and ongoing maintenance to ensure long-term success.</p>
-        </div>
+          <p>Create polished visuals, prototypes and interaction systems.</p>
+        </article>
+        <article class="process-step">
+          <span>04</span>
+          <h3>Develop</h3>
+          <p>Build secure, scalable solutions with modern web and mobile technologies.</p>
+        </article>
+        <article class="process-step">
+          <span>05</span>
+          <h3>Test</h3>
+          <p>Validate performance, accessibility and experience with QA testing.</p>
+        </article>
+        <article class="process-step">
+          <span>06</span>
+          <h3>Launch</h3>
+          <p>Deploy the final product and maintain momentum with ongoing support.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Team Section -->
   <section id="team" class="team">
     <div class="container">
       <div class="section-header">
-        <h2>Our Team</h2>
-        <p>Talented professionals dedicated to your success</p>
+        <h2>Meet the team</h2>
+        <p>Leaders, designers, developers and strategists working together.</p>
       </div>
       <div class="team-grid">
-        <div class="team-member">
+        <article class="team-member">
           <div class="member-avatar">👨‍💼</div>
           <h3>John Mbusyo</h3>
           <p class="role">CEO & Founder</p>
-          <p>15+ years in digital transformation with expertise in scaling startups to enterprise.</p>
-          <div class="member-social">
-            <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="member-avatar">👩‍🎨</div>
+          <p>Building digital businesses with strategy, design and growth experience.</p>
+        </article>
+        <article class="team-member">
+          <div class="member-avatar">👩‍💼</div>
           <h3>Sarah Design Lead</h3>
           <p class="role">Design Director</p>
-          <p>Award-winning designer passionate about creating beautiful, intuitive user experiences.</p>
-          <div class="member-social">
-            <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://dribbble.com" title="Dribbble"><i class="fab fa-dribbble"></i></a>
-          </div>
-        </div>
-        <div class="team-member">
+          <p>Transforms brand stories into memorable user experiences.</p>
+        </article>
+        <article class="team-member">
           <div class="member-avatar">👨‍💻</div>
           <h3>Michael Dev</h3>
           <p class="role">Lead Developer</p>
-          <p>Full-stack architect specialized in scalable cloud infrastructure and modern web technologies.</p>
-          <div class="member-social">
-            <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
+          <p>Builds robust digital products with performance and reliability.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
+  <section id="contact" class="cta contact-cta">
     <div class="container">
-      <div class="section-header">
-        <h2>Client Testimonials</h2>
-        <p>What clients say about working with us</p>
+      <div class="cta-copy">
+        <h2>Ready to launch your next digital project?</h2>
+        <p>Talk to us today and let’s build something that stands out.</p>
       </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="rating">★★★★★</div>
-          <p>"4Force completely transformed our digital presence. Their strategic approach and attention to detail resulted in 300% ROI increase."</p>
-          <h4>Joseph Kimani</h4>
-          <p class="company">CEO, TechStart Kenya</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="rating">★★★★★</div>
-          <p>"The team is incredibly professional and responsive. They delivered our mobile app on time and it exceeded all our expectations."</p>
-          <h4>Mohamed Khalif</h4>
-          <p class="company">Founder, E-Commerce Solutions</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="rating">★★★★★</div>
-          <p>"Best digital agency we've worked with. Their data-driven approach increased our conversions by 45% in just 3 months."</p>
-          <h4>Sarah Omondi</h4>
-          <p class="company">Marketing Director, Growth Agency</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section id="contact" class="cta">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Ready to Transform Your Business?</h2>
-        <p>Let's discuss how we can help you achieve your digital goals.</p>
-        <form class="contact-form" id="contact-form">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Tell us about your project..." rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
+      <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
     </div>
   </section>
 </main>
-
-<!-- Footer -->
 <footer>
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>4Force Developers</h3>
-        <p>Premium digital agency creating transformative solutions for ambitious businesses.</p>
-        <div class="social-links">
-          <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Dukembusyo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-      <div class="footer-section">
-        <h3>Services</h3>
-        <ul>
-          <li><a href="#services">Web Development</a></li>
-          <li><a href="#services">Mobile Apps</a></li>
-          <li><a href="#services">Design & UX</a></li>
-          <li><a href="#services">Digital Marketing</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="#team">About Us</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <p>Nairobi, Kenya</p>
-        <p><a href="mailto:info@4forcedevelopers.com">info@4forcedevelopers.com</a></p>
-        <p><a href="tel:+254712345678">+254 712 345 678</a></p>
-      </div>
+  <div class="container footer-grid">
+    <div class="footer-card">
+      <h3>4Force Developers</h3>
+      <p>Premium digital agency creating transformative web, mobile and marketing solutions.</p>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; <span id="current-year"></span> 4Force Developers. All rights reserved.</p>
+    <div class="footer-card">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#services">Web Development</a></li>
+        <li><a href="#services">Mobile Apps</a></li>
+        <li><a href="#services">UI/UX Design</a></li>
+        <li><a href="#services">Digital Marketing</a></li>
+      </ul>
+    </div>
+    <div class="footer-card">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-card">
+      <h3>Contact</h3>
+      <p><a href="mailto:info@4forcedevelopers.com">info@4forcedevelopers.com</a></p>
+      <p><a href="tel:+254712345678">+254 712 345 678</a></p>
+      <p>Nairobi, Kenya</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Dukembusyo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
     </div>
   </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="current-year"></span> 4Force Developers. All rights reserved.</p>
+  </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
