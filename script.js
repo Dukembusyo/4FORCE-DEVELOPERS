@@ -1,5 +1,6 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('primary-navigation');
+const header = document.querySelector('header');
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', () => {
@@ -14,6 +15,15 @@ if (menuToggle && navLinks) {
     });
   });
 }
+
+// Header scroll effect
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const yearElement = document.getElementById('current-year');
