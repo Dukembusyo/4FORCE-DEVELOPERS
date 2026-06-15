@@ -1,439 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Responsive Navbar with Image Logo">
-<title>4Force Developers | Digital Services</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="4Force Developers - Premium Digital Agency | Web Development, Mobile Apps, Design & Digital Marketing">
+  <title>4Force Developers | Digital Agency Nairobi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!-- Header Section -->
+<!-- Header -->
 <header>
-<nav class="navbar">
+  <nav class="navbar">
     <div class="container navbar-inner">
-        <a href="index.html" class="logo">
-            <img src="images/Group 2.png" alt="4Force Developers Logo">
-        </a>
-
-        <!-- Navigation Links -->
-        <ul class="nav-links" id="primary-navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li class="dropdown">
-                <a href="services.html">Services</a>
-                <ul class="dropdown-menu">
-                    <li><a href="services.html#web-development">Web Development</a></li>
-                    <li><a href="services.html#domain-hosting">Domain Hosting</a></li>
-                    <li><a href="services.html#graphic-design">Graphic Design</a></li>
-                    <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
-                </ul>
-            </li>
-            <li><a href="expertise.html">Our Expertise</a></li>
-            <li><a href="expertise.html#blog">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <div class="nav-actions">
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search...">
-                <button id="searchBtn" type="button">Search</button>
-            </div>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+      <a href="index.html" class="logo">
+        <img src="images/Group 2.png" alt="4Force Developers Logo">
+      </a>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-</nav>
+  </nav>
 </header>
+
 <main>
-<section id="hero-slider">
-    <div class="slider-container">
-    <!-- Slide 1 -->
-    <div class="slide">
-    <div class="slide-content">
-    <h1>Transform Your Business Through <span class="typed-text"></span></h1>
-    <p>Digital transformation starts with the right partner. We design and build world-class digital experiences that elevate your brand and drive measurable growth.</p>
-    <div class="features">
-    <div class="feature-item">🚀 Cutting-Edge Design</div>
-    <div class="feature-item">⚡ High Performance</div>
-    <div class="feature-item">📈 Results-Driven</div>
-    </div>
-    <a href="services.html" class="cta-button">Start Your Project</a>
-    </div>
-    <div class="slide-background" style="background-image: url('images/ma4.jpg');"></div>
-    </div>
-    <!-- Slide 2 -->
-    <div class="slide">
-    <div class="slide-content">
-    <h1>Scalable Solutions for <span class="typed-text"></span></h1>
-    <p>From mobile apps to cloud infrastructure, we engineer solutions built for scale. Your business deserves technology that grows with you.</p>
-    <div class="features">
-    <div class="feature-item">📱 Mobile-First</div>
-    <div class="feature-item">☁️ Cloud-Native</div>
-    <div class="feature-item">🔒 Enterprise Security</div>
-    </div>
-    <a href="contact.html" class="cta-button">Get Started</a>
-    </div>
-    <div class="slide-background" style="background-image: url('images/cs1.jpg');"></div>
-    </div>
-    <!-- Slide 3 -->
-    <div class="slide">
-    <div class="slide-content">
-    <h1>Data-Driven Marketing That <span class="typed-text"></span></h1>
-    <p>Strategic SEO, targeted campaigns, and analytics-backed decisions. We turn insights into growth, and competition into opportunity.</p>
-    <div class="features">
-    <div class="feature-item">📊 Data Analytics</div>
-    <div class="feature-item">🎯 Strategic Growth</div>
-    <div class="feature-item">🌍 Global Reach</div>
-    </div>
-    <a href="#about" class="cta-button">Explore Strategy</a>
-    </div>
-    <div class="slide-background" style="background-image: url('images/domain.jpg');"></div>
-    </div>
-    </div>
-</section>
-  
-
-<section id="services-overview">
+  <!-- Hero Section -->
+  <section id="home" class="hero">
     <div class="container">
-    <div class="section-header">
-        <h2>Our Core Services</h2>
-        <p>End-to-end digital solutions designed for impact and growth</p>
+      <div class="hero-content">
+        <h1>We Create Digital Experiences That Drive Growth</h1>
+        <p>Full-service digital agency specializing in web development, design, and strategic marketing. Let's transform your business.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Start Your Project</a>
+          <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+        </div>
+      </div>
     </div>
-    <div class="service-grid">
-    <div class="service-item">
-    <div class="service-icon">💻</div>
-    <h3>Web Development</h3>
-    <p>Fast, scalable, and conversion-optimized websites built with modern technologies.</p>
-    </div>
-    <div class="service-item">
-    <div class="service-icon">📱</div>
-    <h3>Mobile Apps</h3>
-    <p>Native and cross-platform apps that engage users and drive business growth.</p>
-    </div>
-    <div class="service-item">
-    <div class="service-icon">🎨</div>
-    <h3>Design & UX</h3>
-    <p>User-centric design that balances aesthetics with functionality.</p>
-    </div>
-    <div class="service-item">
-    <div class="service-icon">🌐</div>
-    <h3>Cloud & Hosting</h3>
-    <p>Enterprise-grade infrastructure with 99.9% uptime and global reach.</p>
-    </div>
-    </div>
-    <a href="services.html" class="btn-secondary">Explore All Services</a>
-    </div>
-</section>
-    
+  </section>
 
-    <section id="about">
-        <div class="container">
-        <div class="section-header">
-        <h2>Why Partner With <span class="highlight">4Force</span></h2>
-        <p>We combine strategy, design, and technology to deliver measurable results</p>
-        </div>
-        <div class="about-content">
-        <div class="about-intro">
-        <p>Based in Nairobi, Kenya, 4Force Developers is a digital transformation partner for ambitious businesses. We blend strategic thinking with creative execution and technical excellence to build digital solutions that drive growth.</p>
-        </div>
-        <div class="about-services">
-        <h3>Our Capabilities</h3>
-        <div class="service-list">
-        <div class="service-item">
-        <i class="fas fa-code"></i>
-        <h3>Web Development</h3>
-        <p>We craft responsive, high-performance websites that align with your business
-        goals.</p>
-        </div>
-        <div class="service-item">
-        <i class="fas fa-paint-brush"></i>
-        <h3>UI/UX Design</h3>
-        <p>Designing seamless and intuitive user experiences tailored to your audience.</p>
-        </div>
-
-        <div class="service-item">
-            <i class="fas fa-paint-brush"></i>
-            <h3>Domain hosting and Registration</h3>
-            <p>Reliable hosting solutions for your business needs.</p>
-            </div>
-        <div class="service-item">
-        <i class="fas fa-search"></i>
-        <h3>SEO Optimization</h3>
-        <p>Improving your visibility on search engines to attract more organic traffic.</p>
-        </div>
-        <div class="service-item">
-        <i class="fas fa-shopping-cart"></i>
-        <h3>E-Commerce Solutions</h3>
-        <p>Developing scalable e-commerce platforms to enhance your online sales.</p>
-        </div>
-        <div class="service-item">
-        <i class="fas fa-bullhorn"></i>
-        <h3>Digital Marketing</h3>
-        <p>Creating campaigns that connect your brand with its audience effectively.</p>
-        </div>
-        <div class="service-item">
-        <i class="fas fa-cloud"></i>
-        <h3>Cloud Solutions</h3>
-        <p>Secure cloud hosting and migration services to streamline your operations.</p>
-        </div>
-        <div class="service-item">
-        <i class="fas fa-lock"></i>
-        <h3>Web Security</h3>
-        <p>Ensuring your online platforms are safe from cyber threats and vulnerabilities.</p>
-        </div>
-        <div class="service-item">
-        <i class="fas fa-chart-line"></i>
-        <h3>Business Analytics</h3>
-        <p>Providing insights and data-driven strategies to drive your business forward.</p>
-        </div>
-        <div class="service-item">
-        <i class="fas fa-mobile-alt"></i>
-        <h3>Mobile App Development</h3>
-        <p>Custom mobile apps that cater to your business and user requirements.</p>
-        </div>
-        <div class="service-item">
-        <i class="fas fa-cogs"></i>
-        <h3>Custom Solutions</h3>
-        <p>Tailored solutions that address your unique business challenges and goals.</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        
-
-<section id="unique-proposition">
+  <!-- Services Section -->
+  <section id="services" class="services">
     <div class="container">
-    <h1>Why Choose 4Force Developers?</h1>
-    <p>At 4Force Developers, we don't just create digital solutions—we craft experiences that
-    drive growth, enhance engagement, and deliver measurable results. Here’s what sets us
-    apart:</p>
-    <div class="proposition-grid">
-    <div class="proposition">
-    <h2>1. Tailored Solutions for Every Client</h2>
-    <p>We believe that every business is unique, and so are its needs. Our team takes
-    the time to understand your goals and challenges to create personalized strategies and
-    solutions that align perfectly with your vision.</p>
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Comprehensive solutions for your digital needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Fast, scalable websites built with modern technologies for maximum performance and conversions.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Mobile Apps</h3>
+          <p>Native and cross-platform apps that engage users and drive real business growth.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>User-centric design that beautifully blends aesthetics with functionality and strategy.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Digital Marketing</h3>
+          <p>Data-driven campaigns and SEO strategies that deliver measurable results and ROI.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Cloud & Hosting</h3>
+          <p>Enterprise-grade infrastructure with 99.9% uptime and 24/7 security monitoring.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔒</div>
+          <h3>Security & Optimization</h3>
+          <p>Comprehensive security audits, performance optimization, and ongoing maintenance support.</p>
+        </div>
+      </div>
     </div>
-    <div class="proposition">
-    <h2>2. Expertise Across Industries</h2>
-    <p>With experience spanning various industries, we understand the nuances of
-    different markets. Whether you’re in retail, healthcare, finance, or tech, we have the expertise to
-    deliver targeted solutions.</p>
-    </div>
-    <div class="proposition">
-    <h2>3. Cutting-Edge Technologies</h2>
-    <p>We stay ahead of the curve by leveraging the latest technologies, frameworks,
-    and best practices. Our tech stack ensures performance, security, and scalability for every
-    project we undertake.</p>
-    </div>
-    <div class="proposition">
-    <h2>4. Collaborative Partnership</h2>
-    <p>We don’t see ourselves as just a service provider but as a partner in your
-    success. We work closely with you at every stage, ensuring transparency, communication, and
-    alignment with your objectives.</p>
-    </div>
-    <div class="proposition">
-    <h2>5. Comprehensive Service Offerings</h2>
-    <p>From web development to branding, SEO to cloud services, we provide a
-    one-stop solution for all your digital needs. Our holistic approach ensures consistency and
-    coherence across all your online touchpoints.</p>
-    </div>
-    <div class="proposition">
-    <h2>6. Proven Track Record</h2>
-    <p>With a portfolio of successful projects and satisfied clients, we have a proven track
-    record of delivering exceptional results. Our case studies and testimonials speak for
-    themselves.</p>
-    </div>
-    <div class="proposition">
-    <h2>7. Affordable Without Compromising Quality</h2>
-    <p>We believe in delivering premium-quality services at competitive prices. Our
-    flexible pricing models ensure you get the best value for your investment.</p>
-    </div>
-    <div class="proposition">
-    <h2>8. Post-Launch Support</h2>
-    <p>Our relationship doesn’t end when the project goes live. We provide ongoing
-    maintenance, updates, and support to ensure your solutions stay relevant and perform
-    optimally.</p>
-    </div>
-    </div>
-    <div class="cta">
-    <p>Ready to transform your digital presence? Let’s work together to turn your ideas into
-    impactful solutions.</p>
-    <a href="contact.html" class="btn">Get in Touch</a>
-    </div>
-    </div>
-    </section>
+  </section>
 
-    <!-- creative process -->
-    <section id="creative-process">
-        <div class="container">
-        <h2>Our Creative Process</h2>
-        <p>Every project we undertake follows a structured and client-centered approach. From
-        ideation to delivery, we ensure innovation and excellence at each step.</p>
-        <div class="process-timeline">
-        <div class="process-step">
-        <div class="step-icon">1</div>
-        <div class="step-content">
-        <h3>Discover</h3>
-        <p>We dive deep into your goals, audience, and market trends to define the
-        project's scope and set a clear direction.</p>
-        </div>
-        </div>
-        <div class="process-step">
-        <div class="step-icon">2</div>
-        <div class="step-content">
-        <h3>Research & Strategy</h3>
-        <p>Through competitor analysis and market research, we design a comprehensive
-        strategy tailored to your brand's needs.</p>
-        </div>
-        </div>
-        <div class="process-step">
-        <div class="step-icon">3</div>
-        <div class="step-content">
-        <h3>Ideation & Planning</h3>
-        <p>We create detailed project plans, wireframes, and mockups to visualize the end
-        product and align expectations.</p>
-        </div>
-        </div>
-        <div class="process-step">
-        <div class="step-icon">4</div>
-        <div class="step-content">
-        <h3>Design</h3>
-        <p>Our creative team develops visually stunning designs that resonate with your
-        brand identity and appeal to your audience.</p>
-        </div>
-        </div>
-        <div class="process-step">
-        <div class="step-icon">5</div>
-        <div class="step-content">
-        <h3>Development</h3>
-        <p>Our developers bring the designs to life using cutting-edge technologies,
-        ensuring functionality, responsiveness, and scalability.</p>
-        </div>
-        </div>
-        <div class="process-step">
-        <div class="step-icon">6</div>
-        <div class="step-content">
-        <h3>Testing & Feedback</h3>
-        <p>We rigorously test for bugs, performance, and usability, incorporating client
-        feedback to refine the solution.</p>
-        </div>
-        </div>
-        <div class="process-step">
-        <div class="step-icon">7</div>
-        <div class="step-content">
-        <h3>Launch</h3>
-        <p>After final approvals, we launch the project with thorough support to ensure a
-        smooth transition.</p>
-        </div>
-        </div>
-        <div class="process-step">
-        <div class="step-icon">8</div>
-        <div class="step-content">
-        <h3>Support & Optimization</h3>
-        <p>We provide ongoing maintenance and optimization to ensure long-term success
-        and adaptability to evolving needs.</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-<section id="testimonials">
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
     <div class="container">
-    <h2>What Our Clients Say</h2>
-    <div class=\"testimonials-grid\">
-    <div class=\"testimonial\">
-    <p>\"4Force Developers transformed our business with an amazing website. They understood our vision and delivered beyond expectations.\"</p>
-    <cite>Joseph Kimani, CEO - TechStart Kenya</cite>
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>Showcase of successful digital transformations</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-image">🌐</div>
+          <h3>E-Commerce Platform</h3>
+          <p>Custom e-commerce solution with +300% sales increase. Features inventory management, payment integration, and analytics.</p>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">📱</div>
+          <h3>Mobile App Launch</h3>
+          <p>Cross-platform mobile app for logistics tracking. 50K+ downloads, 4.8★ rating, real-time GPS integration.</p>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">🎨</div>
+          <h3>Brand Redesign</h3>
+          <p>Complete digital rebranding with new website, design system, and marketing materials. 45% traffic increase.</p>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">🔧</div>
+          <h3>SaaS Product</h3>
+          <p>Built a B2B SaaS platform with 500+ enterprise clients. Fully automated billing, API infrastructure.</p>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">📊</div>
+          <h3>Analytics Dashboard</h3>
+          <p>Advanced analytics platform processing 10M+ data points. Real-time dashboards and custom reporting.</p>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image">🚀</div>
+          <h3>Startup MVP</h3>
+          <p>Launched MVP in 6 weeks. Went from zero to Series A funding with successful product-market fit.</p>
+        </div>
+      </div>
     </div>
-    <div class=\"testimonial\">
-    <p>\"Excellent service and support. Our mobile app is a game-changer for us! The team was responsive and professional throughout.\"</p>
-    <cite>Mohamed Khalif, Founder - E-Commerce Solutions</cite>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>150+</h3>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="stat-card">
+          <h3>100+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-card">
+          <h3>45+</h3>
+          <p>Team Members</p>
+        </div>
+        <div class="stat-card">
+          <h3>8+</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
     </div>
-    <div class=\"testimonial\">
-    <p>\"Outstanding digital marketing results. Their data-driven approach increased our conversions by 45% in just 3 months.\"</p>
-    <cite>Sarah Omondi, Marketing Director - Growth Agency</cite>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Process</h2>
+        <p>Strategic approach to every project</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Discovery</h3>
+          <p>We understand your business, goals, and target audience through in-depth consultation.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Strategy</h3>
+          <p>We develop comprehensive strategies aligned with your business objectives and market insights.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Design</h3>
+          <p>Creative team designs beautiful, user-centric experiences that engage and convert.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3>Development</h3>
+          <p>Expert developers build scalable, secure solutions using cutting-edge technologies.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">05</div>
+          <h3>Testing</h3>
+          <p>Rigorous QA testing ensures quality, performance, and security across all platforms.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">06</div>
+          <h3>Launch & Support</h3>
+          <p>Smooth deployment and ongoing maintenance to ensure long-term success.</p>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Team</h2>
+        <p>Talented professionals dedicated to your success</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-avatar">👨‍💼</div>
+          <h3>John Mbusyo</h3>
+          <p class="role">CEO & Founder</p>
+          <p>15+ years in digital transformation with expertise in scaling startups to enterprise.</p>
+          <div class="member-social">
+            <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar">👩‍🎨</div>
+          <h3>Sarah Design Lead</h3>
+          <p class="role">Design Director</p>
+          <p>Award-winning designer passionate about creating beautiful, intuitive user experiences.</p>
+          <div class="member-social">
+            <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://dribbble.com" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar">👨‍💻</div>
+          <h3>Michael Dev</h3>
+          <p class="role">Lead Developer</p>
+          <p>Full-stack architect specialized in scalable cloud infrastructure and modern web technologies.</p>
+          <div class="member-social">
+            <a href="https://linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Client Testimonials</h2>
+        <p>What clients say about working with us</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="rating">★★★★★</div>
+          <p>"4Force completely transformed our digital presence. Their strategic approach and attention to detail resulted in 300% ROI increase."</p>
+          <h4>Joseph Kimani</h4>
+          <p class="company">CEO, TechStart Kenya</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="rating">★★★★★</div>
+          <p>"The team is incredibly professional and responsive. They delivered our mobile app on time and it exceeded all our expectations."</p>
+          <h4>Mohamed Khalif</h4>
+          <p class="company">Founder, E-Commerce Solutions</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="rating">★★★★★</div>
+          <p>"Best digital agency we've worked with. Their data-driven approach increased our conversions by 45% in just 3 months."</p>
+          <h4>Sarah Omondi</h4>
+          <p class="company">Marketing Director, Growth Agency</p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Let's discuss how we can help you achieve your digital goals.</p>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Tell us about your project..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 
-    <footer>
-        <div class="container">
-        <!-- Top Footer Section -->
-        <div class="footer-top">
-        <div class="footer-column">
-        <h3>Contact Us</h3>
-        <p>4Force Developers</p>
-        <p>123 Tech Street, Nairobi, Kenya</p>
-        <p>Email: <a
-        href="mailto:info@4forcedevelopers.com">info@4forcedevelopers.com</a></p>
-        <p>Phone: <a href="tel:+254712345678">+254 712 345 678</a></p>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>4Force Developers</h3>
+        <p>Premium digital agency creating transformative solutions for ambitious businesses.</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Dukembusyo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
-        <div class="footer-column">
-        <h3>Quick Links</h3>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
         <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Mobile Apps</a></li>
+          <li><a href="#services">Design & UX</a></li>
+          <li><a href="#services">Digital Marketing</a></li>
         </ul>
-        </div>
-        <div class="footer-column">
-        <h3>Follow Us</h3>
-        <ul class="social-media">
-        <li><a href="fb://profile/61566001738273" target="_blank"><img src="images/facebook.png"
-        alt="Facebook"></a></li>
-        <li><a href="https://www.linkedin.com/in/john-mbusyo-040a22" target="_blank"><img src="images/linkedin.png"
-        alt="Linkedin"></a></li>
-        <li><a href="https://github.com/Dukembusyo" target="_blank"><img src="images/github.png"
-        alt="Github"></a></li>
-        <li><a href="#" target="_blank"><img src="images/behance.png"
-        alt="Behance"></a></li>
+      </div>
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#team">About Us</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        </div>
-            
-        </div>
-        <div class="newsletter">
-            <h2>Subscribe to Our Newsletter</h2>
-            <p>Stay updated with the latest news, updates, and exclusive offers!</p>
-            <form id="newsletter-form">
-            <input type="email" id="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-            </form>
-            <!-- Success Message (Hidden Initially) -->
-            <p id="success-message" class="hidden">✅ Thank you for subscribing! Check your
-            inbox.</p>
-            </div>
-        <!-- Bottom Footer Section -->
-        <div class="footer-bottom">
-        <p>&copy; <span id="current-year"></span> 4Force Developers. All Rights Reserved. |
-        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-        </div>
-        </div>
-        </footer>
-        <script src="script.js"></script>
-        <!-- <script src="scripts.js"></script> -->
-       
-    <div id="chat-support">
-        <div id="chat-header">Need Help? Chat with Us!</div>
-        <div id="chat-box">
-            <p>Hi! How can we assist you today?</p>
-            <textarea id="chat-input" placeholder="Type your message here..."></textarea>
-            <button id="chat-send">Send</button>
-        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Nairobi, Kenya</p>
+        <p><a href="mailto:info@4forcedevelopers.com">info@4forcedevelopers.com</a></p>
+        <p><a href="tel:+254712345678">+254 712 345 678</a></p>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> 4Force Developers. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
